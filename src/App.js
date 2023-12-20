@@ -85,7 +85,7 @@ function App() {
           outline: 'none',
         }}
       >
-        Upload
+        Registration
       </button>
       <button
         onClick={() => setIsUploadMode(false)}
@@ -102,12 +102,12 @@ function App() {
           outline: 'none',
         }}
       >
-        Authenticate
+        Authentication
       </button>
 
       {isUploadMode ? (
         <div style={{ marginTop: '20px' }}>
-          <h2 style={{ margin: '10px 0' }}>File Upload</h2>
+          <h2 style={{ margin: '10px 0' }}>Registratioin Details</h2>
           <input
             type="file"
             onChange={handleUploadFileChange}
@@ -145,13 +145,13 @@ function App() {
               outline: 'none',
             }}
           >
-            Upload
+            Register
           </button>
           <p>{uploadMessage}</p>
         </div>
       ) : (
         <div style={{ marginTop: '20px' }}>
-          <h2 style={{ margin: '10px 0' }}>Authentication</h2>
+          <h2 style={{ margin: '10px 0' }}>Authentication Detail</h2>
           <input
             type="file"
             onChange={handleAuthFileChange}
